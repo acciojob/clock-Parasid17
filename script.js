@@ -4,6 +4,6 @@ p.setAttribute('id',"timer");
 
 setInterval(()=>{
 	let date = new Date();
-	p.textContent =${date.getDate()}/${date.getMonth()}/${date.getFullYear()}, ${date.toLocaleTimeString("en-US")};
+	p.textContent = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}, ${date.toLocaleTimeString("en-US")}`;
 	document.body.appendChild(p);
 },1000);
